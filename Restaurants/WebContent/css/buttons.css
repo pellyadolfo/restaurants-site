@@ -1,0 +1,45 @@
+.thumbnail {
+  position: relative;
+}
+.thumbnail .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.bg-primary {
+  background: rgba(33, 194, 248, 0.8);
+}
+.bg3 {
+  background: rgba(255, 255, 255, 0.8);
+}
+.bg2 {
+  background: rgba(34, 37, 51, 0.8);
+}
+.bg-primary *,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4 {
+  color: #fff;
+}
+.thumbnail .caption h3 + .wrap {
+  margin-top: 5px;
+}
+.bg3 *,
+.bg3 h2,
+.bg3 h3,
+.bg3 h4 {
+  color: #222533;
+}
+.bg2 *,
+.bg2 h2,
+.bg2 h3,
+.bg2 h4 {
+  color: #fff;
+}
+.thumb-shadow:hover {
+  box-shadow: 9px 13px 26px -8px #222533;
+}
+.uppercase {
+  text-transform: uppercase;
+}
