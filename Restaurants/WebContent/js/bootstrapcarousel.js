@@ -6,9 +6,7 @@
 		backgroundControl: false
 	};
 
-	var cache;
-
-	function init() {
+	function init(cache) {
 		cache.$carouselContainer.find('ol.carousel-indicators').addClass('indicators-fix');
 		cache.$thumbnailsLi.first().addClass('active-thumbnail');
 
@@ -24,14 +22,14 @@
 		}
 	}
 
-	function refreshOpacities(domEl) {
+	function refreshOpacities(domEl, cache) {
 		cache.$thumbnailsLi.removeClass('active-thumbnail');
 		cache.$thumbnailsLi.eq($(domEl).index()).addClass('active-thumbnail');
 	}	
 
-	function bindUiActions() {
+	function bindUiActions(cache) {
 		cache.$carouselContainer.on('slide.bs.carousel', function(e) {
-  			refreshOpacities(e.relatedTarget);
+  			refreshOpacities(e.relatedTarget, cache);
 		});
 
 		cache.$thumbnailsLi.click(function(){
@@ -48,11 +46,10 @@
 				$controls: options.parent().find('.carousel-control')
 			};
 
-		init();
-		bindUiActions();
+		init(cache);
+		bindUiActions(cache);
 
 		return this;
 	}
 
 })(window, jQuery);
-
