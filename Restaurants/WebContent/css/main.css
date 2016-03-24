@@ -139,6 +139,10 @@ body > section {
   margin-bottom: 0;
 }
 
+.vertical-separaration {
+	margin-top: 40px;
+}
+
 @-webkit-keyframes scaleIn {
   0% {
     opacity: 0;
