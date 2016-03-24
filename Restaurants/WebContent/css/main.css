@@ -383,7 +383,7 @@ input.search-form:hover {
   color: #fff;
 }
 
-#main-slider .carousel .btn-slide {
+#main-slider .carousel .btn-slide, .btn-slide {
   padding: 8px 20px;
   background: #c52d2f;
   color: #fff;
