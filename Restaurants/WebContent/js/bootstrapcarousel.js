@@ -6,11 +6,7 @@
 		backgroundControl: false
 	};
 
-	var cache = {
-		$carouselContainer: $('.thumbnails-carousel').parent(),
-		$thumbnailsLi: $('.thumbnails-carousel li'),
-		$controls: $('.thumbnails-carousel').parent().find('.carousel-control')
-	};
+	var cache;
 
 	function init() {
 		cache.$carouselContainer.find('ol.carousel-indicators').addClass('indicators-fix');
@@ -45,6 +41,12 @@
 
 	$.fn.thumbnailsCarousel = function(options) {
 		conf = $.extend(conf, options);
+				
+		cache = {
+				$carouselContainer: options.parent(),
+				$thumbnailsLi: options.find('li'),
+				$controls: options.parent().find('.carousel-control')
+			};
 
 		init();
 		bindUiActions();
@@ -54,4 +56,3 @@
 
 })(window, jQuery);
 
-$('.thumbnails-carousel').thumbnailsCarousel();
