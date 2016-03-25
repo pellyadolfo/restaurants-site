@@ -143,6 +143,14 @@ body > section {
 	margin-top: 40px;
 }
 
+.media-container {
+    height: 100%;
+}
+
+.video-fibers {
+    width: 100%; 
+}
+
 @-webkit-keyframes scaleIn {
   0% {
     opacity: 0;
