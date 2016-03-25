@@ -552,7 +552,8 @@ input.search-form:hover {
 
 #feature {
   background: #f2f2f2;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .features{
