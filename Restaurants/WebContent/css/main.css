@@ -977,10 +977,10 @@ a.accordion-toggle  i{
 #testimonials {
   background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
   background-size: cover;
-}
-#testimonials {
   color: #fff;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 #testimonials h2, 
 #testimonials h3 {
@@ -1012,6 +1012,7 @@ a.accordion-toggle  i{
 #conatcat-info{
   background: #fff url(../images/contact.png) no-repeat 90% 0;
   padding: 30px 0;
+  margin-bottom: 40px;
 }
 
 .contact-info i{
