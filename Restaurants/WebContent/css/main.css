@@ -610,6 +610,13 @@ input.search-form:hover {
     padding-bottom: 0px;
 }
 
+#worldwide {
+    padding-bottom: 0px;
+}
+#worldwide .img-responsive {
+    margin: 0 auto;
+}
+
 #best{
     padding-bottom: 0px;
 }
