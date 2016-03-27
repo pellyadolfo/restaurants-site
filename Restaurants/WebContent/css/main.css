@@ -409,6 +409,17 @@ input.search-form:hover {
   position: absolute;
 }
 
+#main-slider .carousel .best{
+  text-align: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 180px;
+  right: 250px;
+}
+
+#main-slider .carousel .best h3{
+  color: #FFF;
+}
 
 #main-slider .carousel .item {
   background-position: 50%;
