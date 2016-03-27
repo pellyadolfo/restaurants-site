@@ -548,8 +548,8 @@ input.search-form:hover {
 	background: #004a6f;
 	background: url(http://www.conagua.cl/en/wp-content/themes/sandbox/new-img/agua.jpg) 50% 50% repeat;
 	border: 0px;
-	padding-bottom: 0px;
-	padding-top: 0px;
+	padding-bottom: 40px;
+	padding-top: 40px;
 	margin-bottom: 0px;
 }
 
@@ -625,7 +625,7 @@ input.search-form:hover {
 }
 
 #recent-works{
-    padding-bottom: 0px;
+    padding-bottom: 40px;
 	background: url(../images/food.jpg) 50% 50% repeat;
 	color: #FFF;
 }
@@ -642,7 +642,7 @@ input.search-form:hover {
 }
 
 #best{
-    padding-bottom: 0px;
+    padding-bottom: 40px;
     background: #f2f2f2;
 }
 
