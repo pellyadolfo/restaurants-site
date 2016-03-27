@@ -555,6 +555,10 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 1200ms both;
 }
 
+.text-orange {
+	color: #ffae00;
+}
+
 #buttons {
 	background: #004a6f;
 	background: url(http://www.conagua.cl/en/wp-content/themes/sandbox/new-img/agua.jpg) 50% 50% repeat;
