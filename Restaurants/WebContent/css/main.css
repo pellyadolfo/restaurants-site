@@ -549,6 +549,8 @@ input.search-form:hover {
 	background: url(http://www.conagua.cl/en/wp-content/themes/sandbox/new-img/agua.jpg) 50% 50% repeat;
 	border: 0px;
 	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
 }
 
 #feature {
