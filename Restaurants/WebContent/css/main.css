@@ -639,7 +639,7 @@ input.search-form:hover {
 	background: #333333;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	border: 2px solid #ffae00;
+	border-top: 3px solid #ffae00;
 }
 #headline h1 {
 	color: #ffae00;
