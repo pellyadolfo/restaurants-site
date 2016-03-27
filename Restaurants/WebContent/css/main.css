@@ -553,6 +553,21 @@ input.search-form:hover {
 	margin-bottom: 0px;
 }
 
+#stats {
+	background: url(http://velikorodnov.com/html/illusion/images/image_bg_5.jpg) 50% 50% repeat;
+	color: #FFF;
+	padding-bottom: 40px;
+}
+#stats h2 {
+	color: #FFF;
+}
+#stats b {
+	font-size: 48px;
+}
+#stats dd {
+	font-size: 18px;
+}
+
 #feature {
   background: #f2f2f2;
   padding-bottom: 20px;
@@ -997,7 +1012,7 @@ a.accordion-toggle  i{
   background-size: cover;
   color: #fff;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0px;
   margin-bottom: 40px;
 }
 #testimonials h2, 
