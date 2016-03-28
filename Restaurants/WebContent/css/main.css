@@ -635,6 +635,11 @@ input.search-form:hover {
   border: 3px solid #ffae00;
 }
 
+.thumbnail-image {
+	width: 48px;
+	height: 48px;
+}
+
 #headline {
 	background: #333333;
 	padding-top: 20px;
