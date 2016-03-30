@@ -1529,6 +1529,25 @@ ul.social_icons li  a i{
 }
 
 /***********************
+******** Steps *********
+***********************/
+#stepcopy {
+	background: url(https://i.ytimg.com/vi/-ixtdyryXuA/maxresdefault.jpg) 50% 50% no-repeat;
+	color: #FFF;
+	padding-bottom: 40px;
+}
+#stepdeliver {
+	background: url(http://previews.123rf.com/images/pressmaster/pressmaster1006/pressmaster100600267/7179617-Close-up-de-entregar-los-documentos-durante-la-reuni-n-de-informaci-n-de-negocio--Foto-de-archivo.jpg) 50% 50% no-repeat;
+	color: #FFF;
+	padding-bottom: 40px;
+}
+#stepgetpaid {
+	background: url(http://preemploymentscreen.com/content/wp-content/uploads/2014/11/Pay-Money-1561409.jpg) 50% 50% no-repeat;
+	color: #000;
+	padding-bottom: 40px;
+}
+
+/***********************
 ****Service page css****
 ***********************/
 
