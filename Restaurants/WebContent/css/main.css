@@ -602,6 +602,17 @@ input.search-form:hover {
   margin-bottom: 0px;
 }
 
+#products {
+  background: #f2f2f2;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+#products h2 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
 .features{
   padding: 0;
 }
