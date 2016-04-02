@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Comprar | Red Yacumanta</title>
-    
-    <!-- core CSS -->
+    <title>Educacion | Red Yacumanta</title>
+	
+	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    
+    <link href="css/testimonials.css" rel="stylesheet">
+    <link href="css/bootstrapcarousel.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -26,7 +28,7 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
-<body>
+<body class="homepage">
 
     <header id="header">
         <div class="top-bar">
@@ -70,8 +72,9 @@
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Red Yacumanta</a></li>
-                        <li class="dropdown active">
+                        <li class="active"><a href="index.html">Home</a></li>
+						<!-- li><a href="services.html">Servicios</a></li-->
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Restaurantes</i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="restaurants.html">Home</a></li>
@@ -81,7 +84,7 @@
                                 <li><a href="health.html">Certificacion Sanitaria</a></li>
                                 <li><a href="connectors.html">Conector Universal</a></li>
 								<li class="divider">-------------</li>
-		                        <li class="active"><a href="buy.html">Unirse a la Red</a></li>
+		                        <li><a href="buy.html">Unirse a la Red</a></li>
                             </ul>
                         </li>                        
                         <li><a href="distributors.html">Distribuidores</a></li>
@@ -110,18 +113,106 @@
 		
     </header><!--/header-->
 
-    <section id="feature" class="transparent-bg">
-        <div class="container">
-           <div class="center wow fadeInDown">
-                <h2>Comprar</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua. <br>  Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
                 
-                <img src="http://www.edstrom.com/assets/1/7/Water_Purification_Spectrum1.jpg" width="600px" alt="">
-                
-            </div><!--/.get-started-->
+                <div class="item active" style="background-image: url(images/Brindar-700x325-filters.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">Comparte tus tragos con agua Ultrafiltrada</h1>
+                                    <h2 class="animation animated-item-2 text-orange">Cuida tu salud con agua Ultrafiltrada en establecimientos de la Red Yacumanta.</h2>
+                                    <a class="btn-slide animation animated-item-3" href="./buy.html">Unirse a la Red</a>
+                                </div>
+                            </div>
 
-        </div><!--/.container-->
-    </section><!--/#feature-->   
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="images/phone1.png" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+    
+	<!-- /Section: services -->
+     <section id="buttons" class="well well1 well1_ins1">
+
+          <div class="row wow fadeIn" data-wow-duration='2s'>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+              <a href="ourtechnology.html">
+                <img src="images/tuberia-agua.jpg" alt=""/>
+                <div class="caption bg3">
+                  <h3 class="uppercase">Cual es el Problema del Agua?</h3>
+                  <div class="wrap">
+                    <p>Entienda porque es problematica el Agua Peruana.</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+              <a href="health.html">
+                <img src="images/Membrana-utilizada-durante-el-Proceso-de-Ultrafiltracion.png" alt="">
+                <div class="caption bg-primary">
+                  <h3 class="uppercase">Que es la Ultrafiltracion?</h3>
+                  <div class="wrap">
+                    <p>Distinga entre el filtrado convencional y el ultrafiltrado. Leer Mas.</p>
+                  </div>  
+                </div>
+                </a>
+              </div>              
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+              <a href="connectors.html">
+                <img src="images/vaso_llenado_grifo.jpg" alt="">
+                <div class="caption bg2">
+                  <h3 class="uppercase">Que es Agua Ultrafiltrada?</h3>
+                  <div class="wrap">
+                    <p>Disponibles conectores para casi cualquier tipo de cano. Leer Mas.</p>
+                  </div>  
+                </div>
+				</a>                
+              </div>              
+            </div>
+            
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+              <a href="longevity.html">
+                <img src="images/10years.png" alt="">
+                <div class="caption bg3">
+                  <h3 class="uppercase">En que me beneficia?</h3>
+                  <div class="wrap">
+                    <p>10 años de vida util sin recambios ni cartuchos. Leer Mas.</p>
+                  </div>  
+                </div>
+                </a>
+              </div>              
+            </div>
+
+        </div>        
+      </section>
 
     <footer id="footer" class="midnight-blue">
         <div class="container">
@@ -147,5 +238,13 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/bootstrapcarousel.js"></script>
+    <script>
+    $( document ).ready(function() {
+    	$('#thumbnails1').thumbnailsCarousel($('#thumbnails1'));
+    	$('#thumbnails2').thumbnailsCarousel($('#thumbnails2'));
+    	$('#thumbnails3').thumbnailsCarousel($('#thumbnails3'));
+    });
+    </script>
 </body>
 </html>
