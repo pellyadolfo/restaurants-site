@@ -1006,7 +1006,7 @@ a.accordion-toggle  i{
 }
 
 .nav-tabs>li>a:hover{
-  background: #1f1f20;
+  background: #ffae00;
   color:#fff;
 }
 
@@ -1015,7 +1015,7 @@ a.accordion-toggle  i{
 .nav-tabs>li.active>a:focus {
   border: 0;
   color:#fff;
-  background: #1f1f20;
+  background: #ffae00;
   position: relative;
 }
 
@@ -1025,7 +1025,7 @@ a.accordion-toggle  i{
   width: auto;
   height: auto;
   border-style:solid;
-  border-color: transparent transparent transparent #1f1f20;
+  border-color: transparent transparent transparent #ffae00;
   border-width: 25px 22px;
   right: -44px;
   top:0;
