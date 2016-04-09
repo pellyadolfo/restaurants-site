@@ -2693,6 +2693,10 @@ shortcodes page css
 	color: #FFF;
 	font-size: 16px;
 }
+.btn-trial {
+	color: #FFF;
+	background: #ffae00;;
+}
 
 /***********************
 ********* Footer ******
