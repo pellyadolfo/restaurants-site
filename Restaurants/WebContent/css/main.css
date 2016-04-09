@@ -2659,7 +2659,40 @@ shortcodes page css
   font-weight: 600
 }
 
-
+/***********************
+********* Colophon ******
+************************/
+.site-footer {
+	background: #004a6f;
+}
+#colophon {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.colophon-menu-items {
+	-webkit-padding-start: 0px;
+	list-style-type: none;
+}
+.colophon-menu-header {
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFF;
+}
+.colophon-menu-header:hover {
+	color: #FFF;
+}
+.colophon-menu-item {
+	color: #4682B4;
+	font-size: 12px;
+}
+.colophon-menu-item:hover {
+	color: #FFF;
+}
+.colophon-text {
+	color: #FFF;
+	font-size: 16px;
+}
 
 /***********************
 ********* Footer ******
