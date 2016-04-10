@@ -590,6 +590,13 @@ blockquote p {
 .text-orange {
 	color: #ffae00;
 }
+.text-black {
+	color: #000;
+}
+#requirements-peru h1 {
+	color: #000;
+}
+
 
 #buttons {
 	background: #004a6f;
@@ -1732,6 +1739,7 @@ ul.social_icons li  a i{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
 
 /*************************
 ********* Portfolio CSS ******
