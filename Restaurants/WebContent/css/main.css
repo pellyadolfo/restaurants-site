@@ -607,11 +607,31 @@ blockquote p {
 	margin-bottom: 0px;
 }
 #proposal {
-	background: #E6E6FA;
+
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative;
+  background-image: url("../images/Boston_Parkers-Restaurant_2000x1333.jpg");
+	
 	border: 0px;
 	padding-bottom: 40px;
 	padding-top: 40px;
 	margin-bottom: 0px;
+}
+#proposal h2 {
+	color: #FFF;
+}
+#proposal h4 {
+	color: #FFF;
+}
+#proposal p {
+	color: #FFF;
+}
+#proposal small {
+	color: #FFF;
 }
 #stats {
 	background: url(http://velikorodnov.com/html/illusion/images/image_bg_5.jpg) 50% 50% repeat;
@@ -1045,7 +1065,7 @@ a.accordion-toggle  i{
 }
 
 .tab-wrap{
-  border:1px solid #e6e6e6;
+  border:0px solid #e6e6e6;
   margin-bottom: 20px;
 }
 
