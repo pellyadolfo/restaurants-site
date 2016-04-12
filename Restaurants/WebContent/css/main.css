@@ -738,8 +738,16 @@ blockquote p {
 }
 
 #recent-works{
+
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative;
+  background-image: url("../images/food.jpg");
+	
+	
     padding-bottom: 40px;
-	background: url(../images/food.jpg) 50% 50% repeat;
 	color: #FFF;
 }
 
