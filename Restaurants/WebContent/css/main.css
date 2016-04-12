@@ -629,6 +629,7 @@ blockquote p {
 }
 #proposal p {
 	color: #FFF;
+	font-size: 16px;
 }
 #proposal li {
 	color: #FFF;
