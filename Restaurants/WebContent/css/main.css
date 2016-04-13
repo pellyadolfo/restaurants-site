@@ -1895,6 +1895,9 @@ ul.social_icons li  a i{
 ********* Pricing Table CSS *
 **************************/
 
+#steps {
+	margin-bottom: 0px;
+}
 #steps h2 {
 	font-size: 30px;
 	font-weight: bold;
