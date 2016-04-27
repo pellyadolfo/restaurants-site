@@ -596,7 +596,106 @@ blockquote p {
 #requirements-peru h1 {
 	color: #000;
 }
+#requirements-peru-microbiology h1 {
+	color: #000;
+}
 
+#requirements-peru-microbiology td, #requirements-peru-microbiology th {
+    vertical-align:middle;
+}
+#requirements-peru-microbiology thead th {
+    text-align:center; 
+}
+#requirements-peru-microbiology th {
+	background-color: #006699;
+    color: white;
+}
+#requirements-peru-microbiology td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#requirements-peru-microbiology td:hover {
+	background-color: #006699;
+    color: white;
+}
+#requirements-peru-microbiology table {
+	box-shadow: 6px 6px 6px #999;
+}
+
+#requirements-peru-organolectica h1 {
+	color: #000;
+}
+#requirements-peru-organolectica td, #requirements-peru-organolectica th {
+    vertical-align:middle;
+}
+#requirements-peru-organolectica thead th {
+    text-align:center; 
+}
+#requirements-peru-organolectica th {
+	background-color: #006699;
+    color: white;
+}
+#requirements-peru-organolectica td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#requirements-peru-organolectica td:hover {
+	background-color: #006699;
+    color: white;
+}
+#requirements-peru-organolectica table {
+	box-shadow: 6px 6px 6px #999;
+}
+
+#requirements-peru-organicos h1 {
+	color: #000;
+}
+#requirements-peru-organicos td, #requirements-peru-organicos th {
+    vertical-align:middle;
+}
+#requirements-peru-organicos thead th {
+    text-align:center; 
+}
+#requirements-peru-organicos th {
+	background-color: #006699;
+    color: white;
+}
+#requirements-peru-organicos td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#requirements-peru-organicos td:hover {
+	background-color: #006699;
+    color: white;
+}
+#requirements-peru-organicos table {
+	box-shadow: 6px 6px 6px #999;
+}
+
+#requirements-peru-inorganicos h1 {
+	color: #000;
+}
+#requirements-peru-inorganicos td, #requirements-peru-inorganicos th {
+    vertical-align:middle;
+}
+#requirements-peru-inorganicos thead th {
+    text-align:center; 
+}
+#requirements-peru-inorganicos th {
+	background-color: #006699;
+    color: white;
+}
+#requirements-peru-inorganicos td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#requirements-peru-inorganicos td:hover {
+	background-color: #006699;
+    color: white;
+}
+#requirements-peru-inorganicos table {
+	box-shadow: 6px 6px 6px #999;
+}
 
 #buttons {
 	background: #004a6f;
@@ -765,6 +864,143 @@ blockquote p {
 #best{
     padding-bottom: 40px;
     background: #f2f2f2;
+}
+
+#best td, #best th {
+    vertical-align:middle;
+}
+#best thead th {
+    text-align:center; 
+}
+#best th {
+	background-color: #006699;
+    color: white;
+}
+#best td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#best td:hover {
+	background-color: #006699;
+    color: white;
+}
+#best table {
+	box-shadow: 6px 6px 6px #999;
+}
+
+#parasite td, #parasite th {
+    vertical-align:middle;
+}
+#parasite thead th {
+    text-align:center; 
+}
+#parasite th {
+	background-color: #006699;
+    color: white;
+}
+#parasite td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#parasite td:hover {
+	background-color: #006699;
+    color: white;
+}
+#parasite table {
+	box-shadow: 6px 6px 6px #999;
+}
+
+
+
+#bacteria td, #bacteria th {
+    vertical-align:middle;
+}
+#bacteria thead th {
+    text-align:center; 
+}
+#bacteria th {
+	background-color: #006699;
+    color: white;
+}
+#bacteria td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#bacteria td:hover {
+	background-color: #006699;
+    color: white;
+}
+#bacteria table {
+	box-shadow: 6px 6px 6px #999;
+}
+
+
+#virus td, #virus th {
+    vertical-align:middle;
+}
+#virus thead th {
+    text-align:center; 
+}
+#virus th {
+	background-color: #006699;
+    color: white;
+}
+#virus td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#virus td:hover {
+	background-color: #006699;
+    color: white;
+}
+#virus table {
+	box-shadow: 6px 6px 6px #999;
+}
+
+
+#organics td, #organics th {
+    vertical-align:middle;
+}
+#organics thead th {
+    text-align:center; 
+}
+#organics th {
+	background-color: #006699;
+    color: white;
+}
+#organics td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#organics td:hover {
+	background-color: #006699;
+    color: white;
+}
+#organics table {
+	box-shadow: 6px 6px 6px #999;
+}
+
+
+#inorganics td, #inorganics th {
+    vertical-align:middle;
+}
+#inorganics thead th {
+    text-align:center; 
+}
+#inorganics th {
+	background-color: #006699;
+    color: white;
+}
+#inorganics td {
+	background-color: #E1EEF4;
+    color: black;
+}
+#inorganics td:hover {
+	background-color: #006699;
+    color: white;
+}
+#inorganics table {
+	box-shadow: 6px 6px 6px #999;
 }
 
 .recent-work-wrap {
