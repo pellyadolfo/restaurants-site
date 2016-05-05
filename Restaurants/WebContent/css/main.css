@@ -1367,9 +1367,19 @@ a.accordion-toggle  i{
   background-size: cover;
 }
 
-#services {
-  background: url(../images/fondo_people_blue.png) 50% 50% no-repeat;
+#ourservices {
+  background: url(../images/box_contendmiddle.png) 50% 50% no-repeat;
   background-size: cover;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#ourservices h2, 
+#ourservices h3 {
+  color: #000;
+}
+
+.color-black {
+	color: #000;
 }
 
 #testimonials {
