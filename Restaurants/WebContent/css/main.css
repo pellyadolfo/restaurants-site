@@ -1367,6 +1367,11 @@ a.accordion-toggle  i{
   background-size: cover;
 }
 
+#services {
+  background: url(../images/fondo_people.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+
 #testimonials {
   background: url(http://www.mp3poolonline.com/blog/wp-content/uploads/2014/04/1xp94e9ke7gwrvqzlqzc0drqe66xzr6.png) 50% 50% no-repeat;
   background-size: cover;
