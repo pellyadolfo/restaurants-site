@@ -405,6 +405,49 @@ blockquote p {
 *******Home Page******
 **************************/
 
+/* Starburst 2 */
+.starburst2 {
+	display:block;
+	width:6em;
+	height:6em;
+	background:#fe0;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	rotation:-45deg;
+	position:absolute;
+	top:-60px;
+	right:90px;
+	text-align:center;
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+	font-family:Arial, sans-serif;
+	text-shadow:0 0 3em #f00, 0 0 4px #f30;
+	-moz-transition: -moz-transform 0.3s ease;
+	-webkit-transition: -webkit-transform 0.3s ease;
+	transition: transform 0.3s ease;
+}
+.starburst2 span {
+	display:block;
+	width:6em;
+	height:6em;
+	background:#fe0;
+	-webkit-transform:rotate(22.5deg);
+	-moz-transform:rotate(22.5deg);
+	rotation:22.5deg;
+}
+.starburst2:hover,
+.starburst2:hover span {
+	background:#fa0;
+	color:#fff;
+	text-shadow:0 0 20px #fff, 0 0 8px #fff;
+}
+.starburst2:hover {
+	-webkit-transform:rotate(315deg);
+	-moz-transform:rotate(315deg);
+	rotation:315deg;
+}
+
 
 #main-slider {
   position: relative;
