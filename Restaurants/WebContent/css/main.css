@@ -209,8 +209,13 @@ body > section {
 
 .top-bar {
   padding: 10px 0;
-  background: #004a6f;
+  background: #001933;
   line-height: 28px;
+}
+
+.top-row {
+  background: #000030;
+  padding-bottom: 0;
 }
 
 .top-number{
@@ -240,6 +245,20 @@ ul.social-share li a {
   display: inline-block;
   color: #fff;
   background: #4682B4;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+ul.topmenusul {
+  list-style-type: none;
+}
+
+ul.topmenusul li a {
+  display: inline-block;
+  color: #fff;
   width: 25px;
   height: 25px;
   line-height: 25px;
