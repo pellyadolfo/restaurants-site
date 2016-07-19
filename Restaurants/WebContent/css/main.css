@@ -3025,8 +3025,8 @@ shortcodes page css
 	background: #004a6f;
 }
 #colophon {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 }
 .colophon-menu-items {
 	-webkit-padding-start: 0px;
@@ -3055,6 +3055,22 @@ shortcodes page css
 .btn-trial {
 	color: #FFF;
 	background: #ffae00;;
+}
+
+/***********************
+********* Credits ******
+************************/
+#credits {
+  background: #000030;
+}
+.credits-text {
+  font-size: 12px;
+  height: 100%;
+  color: #FFF;
+  padding-top: 12px;
+}
+.credits-logo {
+  text-align: center;
 }
 
 /***********************
@@ -3122,9 +3138,3 @@ shortcodes page css
   display: inline-block;
   margin-left: 15px;
 }
-
-
-
-
-
-
