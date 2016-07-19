@@ -1479,6 +1479,12 @@ a.accordion-toggle  i{
   width: 20%;
 }
 
+#forum-info{
+  background: #fff url(http://radiomundoreal.fm/local/cache-gd2/fa/022907d5f9147be382413a18cb6661.jpg) no-repeat 90% 0;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+
 #conatcat-info{
   background: #fff url(../images/contact.png) no-repeat 90% 0;
   padding: 30px 0;
