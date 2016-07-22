@@ -2088,6 +2088,11 @@ ul.social_icons li  a i{
   padding: 10px;
 }
 
+.footer-bottom-menus {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .separation {
 	padding-top: 20px;
 	padding-bottom: 20px;
