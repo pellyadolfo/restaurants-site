@@ -2221,6 +2221,9 @@ ul.social_icons li  a i{
 	font-size: 30px;
 	font-weight: bold;
 }
+#steps li {
+  margin: 10px 0;
+}'
 
 .pricing_heading {
   margin-top: 120px
