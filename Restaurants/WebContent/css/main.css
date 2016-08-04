@@ -1521,6 +1521,7 @@ a.accordion-toggle  i{
 #conatcat-info{
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color:#F5F5F5;
 }
 .contact-info-frame {
   background: #fff url(../images/contact.png) no-repeat 90% 0;
