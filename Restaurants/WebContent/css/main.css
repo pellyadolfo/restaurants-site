@@ -665,9 +665,10 @@ blockquote p {
 /* for rss feeds */
 .feeds .feed {margin:10px;background-color:#fff;padding:0px}
 .feeds .feed .loading {text-align:center;font-size:20px;margin:10px}
-.feeds .feed .header {  background: #fff url(http://cadizinc.com/wp-content/uploads/2011/11/water_07-610x370.jpg) no-repeat 90% 0;font-size:1.5em;font-weight:bold;color:#FFF;display: cell;text-align: center;vertical-align: middle;line-height:70px;height:70px;border-bottom:1px solid #eee}
-.feeds .feed .header-text {font-size:1.5em;display: cell;vertical-align: middle;padding-left:20px;height:70px;border-bottom:1px solid #eee}
-
+.feeds .feed .header {background: #fff url(http://cadizinc.com/wp-content/uploads/2011/11/water_07-610x370.jpg) no-repeat 90% 0;text-align:center;height:70px;border-bottom:1px solid #ff}
+.feeds .feed .header h1 {font-size:22px;margin:0; padding-top:10px;font-weight:bold;color:#FFF;}
+.feeds .feed .header h2 {font-size:14px;margin:0; padding-top:3px;font-weight:bold;color:#FFF;}
+	
 /* for rss feeds scrolling */
 .holder {overflow:hidden;font-family:Helvetica;}
 .holder .mask {position: relative;left: 0px;top: 0px;height:230px;overflow:hidden;}
