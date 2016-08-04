@@ -1519,11 +1519,12 @@ a.accordion-toggle  i{
 }
 
 #conatcat-info{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .contact-info-frame {
   background: #fff url(../images/contact.png) no-repeat 90% 0;
+  background-color:rgba(0,0,0,0); /* transparent */
   padding-top: 30px;
   padding-bottom: 30px;
 }
