@@ -255,6 +255,11 @@ ul.topmenusul {
   list-style-type: none;
 }
 
+ul.topmenusul li {
+  display: inline;
+  margin: 0 10px;
+}
+
 ul.topmenusul li a {
   display: inline-block;
   color: #fff;
