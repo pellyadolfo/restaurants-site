@@ -165,14 +165,7 @@
 									<th style="display:none;">Long</th>
 								</tr>
 							</thead>
-							<tbody id="tbody">
-								<tr class='clickable-row'>
-									<td>2/7/2016</td>
-									<td>Declaran alerta sanitaria por agua en Loreto</td>
-									<td style="display:none;">-3.96279</td>
-									<td style="display:none;">-76.82597</td>
-								</tr>
-							</tbody>
+							<tbody id="tbody"></tbody>
 							<tfoot>
 								<tr><td colspan="8" class="text-center"><small><em>Datos obtenidos de Digesa, El Comercio.</em><small></td></tr>
 							</tfoot>
@@ -318,7 +311,7 @@
 				});
 				
 				// add row in the table
-				document.getElementById("tbody").innerHTML = '<tr class=\'clickable-row\'><td>' + alert.date + '</td><td>' + alert.title + '</td><td style="display:none;">' + alert.LatLong.lat + '</td><td style="display:none;">' + alert.LatLong.lng + '</td></tr>';
+				$('#tbody').append('<tr class=\'clickable-row\'><td>' + alert.date + '</td><td>' + alert.title + '</td><td style="display:none;">' + alert.LatLong.lat + '</td><td style="display:none;">' + alert.LatLong.lng + '</td></tr>');
 	        });
 		})
 		.done(function() {
