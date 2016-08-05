@@ -165,7 +165,7 @@
 									<th style="display:none;">Long</th>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody id="tbody">
 								<tr class='clickable-row'>
 									<td>2/7/2016</td>
 									<td>Declaran alerta sanitaria por agua en Loreto</td>
@@ -316,6 +316,9 @@
 				        map.setCenter(new google.maps.LatLng(alert.LatLong.lat, alert.LatLong.lng));
 					});
 				});
+				
+				// add row in the table
+				document.getElementById("tbody").innerHTML = '<tr class=\'clickable-row\'><td>' + alert.date + '</td><td>' + alert.title + '</td><td style="display:none;">' + alert.LatLong.lat + '</td><td style="display:none;">' + alert.LatLong.lng + '</td></tr>';
 	        });
 		})
 		.done(function() {
