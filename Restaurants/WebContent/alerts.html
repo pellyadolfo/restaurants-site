@@ -146,16 +146,38 @@
 		
     </header><!--/header-->
     
-    <section id="technology" class="separation">
+    <section id="observatory" class="separation">
         <div class="container">
            <div class="center wow fadeInDown">
                 <h1>Observatorio del Agua</h1>
-                <p class="lead text-left">Aquí podrá seguir los principales eventos que se produzcan en materia de agua en la sociedad.</p>
+                <p class="lead text-left">Aquí podrá seguir los principales eventos que se produzcan en materia de agua en la sociedad y debatir sobre los mismos en el hilo correspondiente del Foro Purificación de Agua.</p>
             </div>
             
 			<div class="row wow fadeIn vertical-separaration" data-wow-duration='2s'>
 				<div class="col-md-5 col-sm-12 col-xs-12">
-
+					<div class="table-responsive">
+						<table summary="Comparacion de Filtros en el Mercado Peruano" class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>Fecha</th>
+									<th>Evento</th>
+									<th style="display:none;">Lat</th>
+									<th style="display:none;">Long</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class='clickable-row'>
+									<td>2/7/2016</td>
+									<td>Declaran alerta sanitaria por agua en Loreto</td>
+									<td style="display:none;">-3.96279</td>
+									<td style="display:none;">-76.82597</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr><td colspan="8" class="text-center"><small><em>Datos obtenidos de Digesa, El Comercio.</em><small></td></tr>
+							</tfoot>
+						</table>
+						</div>
 				</div>
 				<div class="col-md-7 col-sm-12 col-xs-12">				
 					<div id="map_canvas"></div>
@@ -262,22 +284,49 @@
 			zoom: 6,
 			center: new google.maps.LatLng(-9.12373, -74.94412),
 		});
-            
-		// add marker
-		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng(-3.96279, -76.82597),
-			map: map,
-			title: 'Loreto',
-			url: "http://purificaciondeagua.freeforums.net/thread/26/",
-		});
-		google.maps.event.addListener(marker, 'click', function() {
-		    //window.location.href = this.url;
-		    var win = window.open(this.url, '_blank');
-		    win.focus();
-			/*infowindow = new google.maps.InfoWindow({
-				content: 'Hello, World!!'
-			});
-			infowindow.open(map, marker);*/
+		
+		// traverse json alerts
+		$.getJSON( "docs/alerts.json", function(json) {
+	        $.each(json.observatory.alerts, function(index, alert) {
+
+	        	// add marker
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(alert.LatLong.lat, alert.LatLong.lng),
+					map: map,
+					title: alert.address,
+					thread: alert.thread,
+				});
+				google.maps.event.addListener(marker, 'click', function() {
+				    // add Infowindow
+					infowindow = new google.maps.InfoWindow({
+						content: '<div>'+
+					      			'<h3>' + alert.title + '</h3>'+
+					      			'<div>'+
+					      				'<p>' + alert.description + '</p>'+
+					      				'<p>Debate la <a href="http://purificaciondeagua.freeforums.net/thread/' + alert.thread + '/" target="_blank">noticia</a></p>'+
+							      	'</div>'+
+								'</div>',
+					});
+					infowindow.open(map, marker);
+				});
+				
+				// add click behaviour
+				jQuery(document).ready(function($) {
+				    $(".clickable-row").click(function() {
+				        map.setCenter(new google.maps.LatLng(alert.LatLong.lat, alert.LatLong.lng));
+					});
+				});
+	        });
+		})
+		.done(function() {
+			console.log( "second success" );
+		})
+		.fail(function( jqxhr, textStatus, error ) {
+			var err = textStatus + ", " + error;
+			console.log( "Request Failed: " + err );
+		})
+		.always(function() {
+			console.log( "complete" );
 		});
 	};
 	</script>
