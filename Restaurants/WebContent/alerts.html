@@ -302,16 +302,14 @@
 					});
 					infowindow.open(map, marker);
 				});
-				
-				// add click behaviour
-				jQuery(document).ready(function($) {
-				    $(".clickable-row").click(function() {
-				        map.setCenter(new google.maps.LatLng(alert.LatLong.lat, alert.LatLong.lng));
-					});
-				});
-				
+			
 				// add row in the table
-				$('#tbody').append('<tr class=\'clickable-row\'><td>' + alert.date + '</td><td>' + alert.title + '</td><td style="display:none;">' + alert.LatLong.lat + '</td><td style="display:none;">' + alert.LatLong.lng + '</td></tr>');
+				$('#tbody').append('<tr class=\'clickable-row-' + index + '\'><td>' + alert.date + '</td><td>' + alert.title + '</td><td style="display:none;">' + alert.LatLong.lat + '</td><td style="display:none;">' + alert.LatLong.lng + '</td></tr>');
+				
+				// on click center the map
+			    $(".clickable-row-" + index).click(function() {
+			        map.setCenter(new google.maps.LatLng(alert.LatLong.lat, alert.LatLong.lng));
+				});
 	        });
 		})
 		.done(function() {

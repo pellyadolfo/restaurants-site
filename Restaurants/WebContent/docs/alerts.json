@@ -2,12 +2,22 @@
     "observatory": {
         "title": "Observatorio de Alertas",
 		"alerts": [{
+			"date": "5/7/2016",
+			"LatLong": {
+				"lat": "-12.59091",
+				"lng": "-69.19631"
+			},
+			"title": "Monitoreo Participativo en Puerto Maldonado",
+			"address": "Puerto Maldonado",
+			"description": "La Autoridad Nacional del Agua del Ministerio de Agricultura y Riego, a través de la Autoridad Administrativa del Agua Madre de Dios y la Administración Local de Agua Maldonado, iniciaron el proceso de monitoreo participativo en la cuencas de Madre de Dios, Inambari, Tambopata, Las Piedras, Acre y Tahuamanu..",
+			"thread": "21"
+		}, {
 			"date": "2/7/2016",
 			"LatLong": {
 				"lat": "-3.96279",
 				"lng": "-76.82597"
 			},
-			"title": "Declaran alerta sanitaria por agua en Loreto",
+			"title": "Declaran alerta sanitaria en Loreto",
 			"address": "Datem del Marañón, Loreto",
 			"description": "El Ministerio de Salud (Minsa) declaró en emergencia, por 90 días, la calidad del agua de la zona de Barranca, provincia de Datem del Marañón, en Loreto, tras el derrame de petróleo ocurrido en dicha zona.",
 			"thread": "26"
