@@ -26,8 +26,8 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
         <style>
 		#map_canvas {
-			width: 400px;
-			height: 400px;
+			width: 100%;
+			height: 900px;
 			margin-bottom: 0px;
 			border: 2px solid #fff;
 		}
@@ -145,39 +145,26 @@
         </nav><!--/nav-->
 		
     </header><!--/header-->
+    
+    <section id="technology" class="separation">
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h1>Observatorio del Agua</h1>
+                <p class="lead text-left">Aquí podrá seguir los principales eventos que se produzcan en materia de agua en la sociedad.</p>
+            </div>
             
-	<div id="map_canvas"></div>
-    
-	<!--Google Maps API-->
-	<script type="text/javascript" src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYCJKm-NLpt6QWr8nWNtEXfA7WPBhKRpA" async defer></script>
-    <script type="text/javascript">
-    
-    	// load the map
-        function initialize() {
-            var mapOptions = {
-                center: new google.maps.LatLng(-12.066852, -77.069092),
-                zoom: 6,
-            };
-			var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-        }
-		google.maps.event.addDomListener(window, 'load', initialize);
-		
-		// center the map
-		var startPos;			
-	    var mapDiv = document.getElementById("map_canvas");
-	    var map = new google.maps.Map(mapDiv, {
-            center: navigator.geolocation.getCurrentPosition(function(position) {
-    	    	startPos = position;
-    	    	document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-    	    	document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-			}, function(failure) {
-				if(failure.message.indexOf("Only secure origins are allowed") == 0) {
-			        //alert('insecure position');
-				}
-			})
-		});
-    </script>
+			<div class="row wow fadeIn vertical-separaration" data-wow-duration='2s'>
+				<div class="col-md-5 col-sm-12 col-xs-12">
 
+				</div>
+				<div class="col-md-7 col-sm-12 col-xs-12">				
+					<div id="map_canvas"></div>
+				</div>
+			</div>
+
+        </div><!--/.container-->
+    </section><!--/#feature-->
+                
 	<footer id="colophon" class="site-footer">
 		<div class="container colophon-container">
 			<div class="row colophon-menu">
@@ -268,5 +255,33 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+	<script type="text/javascript">
+    function initialize() {
+		// add map
+		var map = new google.maps.Map(document.getElementById('map_canvas'), {
+			zoom: 6,
+			center: new google.maps.LatLng(-9.12373, -74.94412),
+		});
+            
+		// add marker
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(-3.96279, -76.82597),
+			map: map,
+			title: 'Loreto',
+			url: "http://purificaciondeagua.freeforums.net/thread/26/",
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+		    //window.location.href = this.url;
+		    var win = window.open(this.url, '_blank');
+		    win.focus();
+			/*infowindow = new google.maps.InfoWindow({
+				content: 'Hello, World!!'
+			});
+			infowindow.open(map, marker);*/
+		});
+	};
+	</script>
+	<script type="text/javascript" src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYCJKm-NLpt6QWr8nWNtEXfA7WPBhKRpA&v=3.24&callback=initialize" async defer></script>
+
 </body>
 </html>
