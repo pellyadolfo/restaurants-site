@@ -7,7 +7,7 @@ $(function () {
     newsListItems = $('.news-headlines li'),
     firstNewsItem = $('.news-headlines li:nth-child(1)'),
       newsPreview = $('.news-preview'),
-          elCount = $('.news-headlines').children(':not(.highlight)').index(),
+          elCount = $('.news-headlines').children(':not(.highlight)').length,
          vPadding = (parseInt(firstNewsItem.css('padding-top').replace('px', ''), 10)) +
                     (parseInt(firstNewsItem.css('padding-bottom').replace('px', ''), 10)),
           vMargin = (parseInt(firstNewsItem.css('margin-top').replace('px', ''), 10)) +
@@ -49,6 +49,7 @@ $(function () {
         firstNewsItem.trigger('click');
       } else {
         $('.selected').next(':not(.highlight)').trigger('click');
+        console.log($('.selected').next(':not(.highlight)').index());
       }
     }, speed);
 
