@@ -1,0 +1,54 @@
+{
+    "observatory": {
+        "title": "Establecimientos Asociados",
+		"alerts": [{
+			"LatLong": {
+				"lat": "-6.770726",
+				"lng": "-79.838348"
+			},
+			"name": "Baguetería Snack Don Benny",
+			"address": "Av. Balta Nº 465 – Nº 499",
+			"description": "Baguetería Snack Don Benny"
+		}, {
+			"LatLong": {
+				"lat": "-3.7492254",
+				"lng": "-73.2424374"
+			},
+			"name": "Dawn of the Amazon Tours and Cruises",
+			"address": "Malecón Maldonado #185",
+			"description": "Dawn of the Amazon Tours and Cruises"
+		}, {
+			"LatLong": {
+				"lat": "-6.772764",
+				"lng": "-79.838658"
+			},
+			"name": "Hebron Restaurant",
+			"address": "Av. Balta 605",
+			"description": "Hebron Restaurant"
+		}, {
+			"LatLong": {
+				"lat": "-6.770326",
+				"lng": "-79.839821"
+			},
+			"name": "Kango Cafe",
+			"address": "Elias Aguirre Nro 561",
+			"description": "Kango Cafe"
+		}, {
+			"LatLong": {
+				"lat": "-6.777845",
+				"lng": "-79.833085"
+			},
+			"name": "Megaburguer",
+			"address": "Andres Avelino Caceres 198",
+			"description": "Megaburguer"
+		}, {
+			"LatLong": {
+				"lat": "-6.771279",
+				"lng": "-79.836587"
+			},
+			"name": "Vegetariano La Naturaleza",
+			"address": "Juan Cuglievan # 619",
+			"description": "Vegetariano La Naturaleza"
+		}]
+    }
+}

@@ -151,8 +151,8 @@
     <section id="afiliates" class="separation">
         <div class="container">
            <div class="center wow fadeInDown">
-                <h1>Observatorio del Agua</h1>
-                <p class="lead text-left">Aquí podrá seguir los principales eventos que se produzcan en materia de agua en la sociedad y debatir sobre los mismos en el hilo correspondiente del Foro Purificación de Agua.</p>
+                <h1>Afiliados</h1>
+                <p class="lead text-left">A continuación se muestran los establecimientos afiliados a la Red Yacumanta.</p>
             </div>
             
 			<div class="row wow fadeIn vertical-separaration" data-wow-duration='2s'>
@@ -161,20 +161,19 @@
 						<table summary="Comparacion de Filtros en el Mercado Peruano" class="table table-bordered table-hover">
 							<thead>
 								<tr>
-									<th>Fecha</th>
-									<th>Evento</th>
+									<th>Establecimiento Gastronómico</th>
 									<th style="display:none;">Lat</th>
 									<th style="display:none;">Long</th>
 								</tr>
 							</thead>
 							<tbody id="tbody"></tbody>
 							<tfoot>
-								<tr><td colspan="8" class="text-center"><small><em>Datos obtenidos de ANA, SUNASS, Digesa, El Comercio, Gestión.</em><small></td></tr>
+								<tr><td colspan="8" class="text-center"><small><em>Añade tu Establecimiento <a href="buy.html">aquí</a></em><small></td></tr>
 							</tfoot>
 						</table>
 						</div>
 				</div>
-				<div class="col-md-7 col-sm-12 col-xs-12">				
+				<div class="col-md-7 col-sm-12 col-xs-12">
 					<div id="map_canvas"></div>
 				</div>
 			</div>
@@ -282,24 +281,23 @@
 		});
 		
 		// traverse json alerts
-		$.getJSON( "docs/alerts.json", function(json) {
+		$.getJSON( "docs/afiliates.json", function(json) {
 	        $.each(json.observatory.alerts, function(index, alert) {
 
 	        	// add marker
 				var marker = new google.maps.Marker({
 					position: new google.maps.LatLng(alert.LatLong.lat, alert.LatLong.lng),
 					map: map,
-					title: alert.address,
-					thread: alert.thread,
+					title: alert.address
 				});
 				google.maps.event.addListener(marker, 'click', function() {
 				    // add Infowindow
 					infowindow = new google.maps.InfoWindow({
 						content: '<div>'+
-					      			'<h3>' + alert.title + '</h3>'+
+					      			'<h3>' + alert.name + '</h3>'+
 					      			'<div>'+
 					      				'<p>' + alert.description + '</p>'+
-					      				'<p>Debate la <a href="http://purificaciondeagua.freeforums.net/thread/' + alert.thread + '/" target="_blank">noticia</a></p>'+
+					      				'<p>Visita la <a href="#" target="_blank">página web</a></p>'+
 							      	'</div>'+
 								'</div>',
 					});
@@ -307,7 +305,7 @@
 				});
 			
 				// add row in the table
-				$('#tbody').append('<tr class=\'clickable-row-' + index + '\'><td>' + alert.date + '</td><td>' + alert.title + '</td><td style="display:none;">' + alert.LatLong.lat + '</td><td style="display:none;">' + alert.LatLong.lng + '</td></tr>');
+				$('#tbody').append('<tr class=\'clickable-row-' + index + '\'><td>' + alert.name + '</td><td style="display:none;">' + alert.LatLong.lat + '</td><td style="display:none;">' + alert.LatLong.lng + '</td></tr>');
 				
 				// on click center the map
 			    $(".clickable-row-" + index).click(function() {
