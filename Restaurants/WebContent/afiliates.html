@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="ClassifiApps">
-    <title>Unirse a la Red | Red Yacumanta</title>
-    
-    <!-- core CSS -->
+    <title>Acerca | Red Yacumanta</title>
+	
+	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    
+	
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -24,10 +24,16 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+        <style>
+		#map_canvas {
+			width: 100%;
+			height: 900px;
+			margin-bottom: 0px;
+			border: 2px solid #fff;
+		}
+    </style>
 </head><!--/head-->
-
 <body>
-
     <header id="header">
 
         <div class="top-bar top-row">
@@ -84,7 +90,7 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Establecimientos</i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="restaurants.html">Home</a></li>
@@ -93,7 +99,7 @@
 		                        <li><a href="buy.html">Unirse a la Red</a></li>
 								<li class="divider">-------------</li>
 		                        <li><a href="kit.html">Kit Yacumanta</a></li>
-		                        <li class="active"><a href="promotion.html">Promoción</a></li>
+		                        <li><a href="promotion.html">Promoción</a></li>
 		                        <li><a href="eservices.html">Servicios Adicionales</a></li>
 								<li class="divider">-------------</li>
 		                        <li><a href="afiliates.html">Establecimientos Afiliados</a></li>
@@ -127,10 +133,10 @@
                                 <li><a href="downloads.html">Descargas</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Red Yacumanta</i></a>
                             <ul class="dropdown-menu">
-								<li><a href="about-us.html">Acerca De</a></li>
+								<li class="active"><a href="about-us.html">Acerca De</a></li>
 								<li><a href="distributors.html">Empleo</a></li>
 								<li><a href="contact-us.html">Contacto</a></li>
                             </ul>
@@ -141,98 +147,41 @@
         </nav><!--/nav-->
 		
     </header><!--/header-->
-
-    <section id="steps" class="well well1 well1_ins1 ">
+    
+    <section id="afiliates" class="separation">
         <div class="container">
            <div class="center wow fadeInDown">
-                <h2>Promoción</h2>
-                <p class="lead text-left">En correspondencia por el interés de sus afiliados por proporcionar una adecuada calidad de agua a sus clientes, Red Yacumanta realizará esfuerzos de promoción de los mismos, tanto a través de las nuevas tecnologías como por medios presenciales.</p>
+                <h1>Observatorio del Agua</h1>
+                <p class="lead text-left">Aquí podrá seguir los principales eventos que se produzcan en materia de agua en la sociedad y debatir sobre los mismos en el hilo correspondiente del Foro Purificación de Agua.</p>
             </div>
+            
+			<div class="row wow fadeIn vertical-separaration" data-wow-duration='2s'>
+				<div class="col-md-5 col-sm-12 col-xs-12">
+					<div class="table-responsive">
+						<table summary="Comparacion de Filtros en el Mercado Peruano" class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>Fecha</th>
+									<th>Evento</th>
+									<th style="display:none;">Lat</th>
+									<th style="display:none;">Long</th>
+								</tr>
+							</thead>
+							<tbody id="tbody"></tbody>
+							<tfoot>
+								<tr><td colspan="8" class="text-center"><small><em>Datos obtenidos de ANA, SUNASS, Digesa, El Comercio, Gestión.</em><small></td></tr>
+							</tfoot>
+						</table>
+						</div>
+				</div>
+				<div class="col-md-7 col-sm-12 col-xs-12">				
+					<div id="map_canvas"></div>
+				</div>
+			</div>
 
         </div><!--/.container-->
-		
-		<div class="row wow fadeIn" data-wow-duration='2s'>
-          
-			<div class="col-md-1 col-sm-12 col-xs-12">
-			</div>
-
-			<div class="col-md-5 col-sm-12 col-xs-12">
-				<h2 class="center text-orange">Distintivo de la Entrada</h2>
-                <p class="lead text-left">Los afiliados podran disponer de un distintivo a la entrada de sus establecimiento que indique a sus clientes que en ese Establecimiento se esta haciendo un adecuado tratamiento del agua en los procesos del mismo.</p>
-			</div>
-			
-			<div class="center">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-                	<img src="images/sticker-yacumanta.png" width="500" alt="logo">
-				</div>
-			</div>
-			
-		</div>
-		
-		<hr/>
-		
-		<div class="row wow fadeIn" data-wow-duration='2s'>
-          
-			<div class="center">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-                	<img src="images/yacumanta-logo.png" width="250" alt="logo">
-				</div>
-			</div>
-
-			<div class="col-md-5 col-sm-12 col-xs-12">
-				<h2 class="center text-orange">Disponibilidad de Material Gráfico</h2>
-                <p class="lead text-left">Los Establecimientos de la Red Yacumanta podrán utilizar todo el material gráfico disponible e incluirlo en su material de marketing, cartas, folletos... para notificar a sus clientes de su consciencia sobre la calidad del agua y sobre su salud.</p>
-			</div>
-
-			<div class="col-md-1 col-sm-12 col-xs-12">
-			</div>
-						
-		</div>
-		
-		<hr/>
-				
-		<div class="row wow fadeIn" data-wow-duration='2s'>
-			
-			<div class="col-md-1 col-sm-12 col-xs-12">
-			</div>
-			
-			<div class="col-md-5 col-sm-12 col-xs-12">
-				<h2 class="center text-orange">Acceso a la App de Celular de Red Yacumanta</h2>
-                <p class="lead text-left">A través de la aplicación de celular Red Yacumanta los usuarios podrán localizar Establecimientos donde existe una consciencia por la calidad del agua utilizada en sus procesos como servicio a sus clientes.</p>
-                <p class="lead text-left">Puede descargar la app Yacumanta en el siguiente enlace:</p>
-                <p class="center"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.networks.yacumanta.demand"><img src="http://4.bp.blogspot.com/-n5n6noFNCTI/VA7p1uAeErI/AAAAAAAAG8Q/4l830G2Cgn4/s1600/Download_on_Google_Play.png" width="150"/></a></p>
-			</div>
-
-			<div class="center">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-                	<img src="images/Screenshot_yacumanta.png" width="200" alt="">
-				</div>
-			</div>
-				
-		</div>
-		
-		<hr/>
-				
-		<div class="row wow fadeIn" data-wow-duration='2s'>
-
-			<div class="center">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-                	<img src="http://www.emsanbler.com/images/web-profesional.jpg" width="400" alt="">
-				</div>
-			</div>
-			
-			<div class="col-md-5 col-sm-12 col-xs-12">
-				<h2 class="center text-orange">Acceso a las Aplicaciones Web de Red Yacumanta</h2>
-                <p class="lead text-left">Adicionalmente, Red Yacumanta desarrollará sistemas en Internet con objeto de promocionar a sus afiliados e incrementar su base de clientes.</p>
-			</div>
-
-			<div class="col-md-1 col-sm-12 col-xs-12">
-			</div>
-				
-		</div>
-		
-	</section>
-
+    </section><!--/#feature-->
+                
 	<footer id="colophon" class="site-footer">
 		<div class="container colophon-container">
 			<div class="row colophon-menu">
@@ -301,7 +250,7 @@
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</footer><!-- #colophon -->
-	
+
 	<footer id="credits" class="site-footer">
 		<div class="container colophon-container">
 			<div class="row footer-bottom-menus">
@@ -311,7 +260,7 @@
 				</div>
 			
 				<div class="col-xs-12 col-sm-6 col-md-6 credits-text top-row credits-logo">
-					© Copyright 2016 Red Yacumanta. Todos los Derechos Reservados
+					© Copyright 2016 Red Yacumanta. Todos los Derechos Reservados 
 				</div>
 				
 			</div><!-- .row -->	
@@ -324,5 +273,61 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+	<script type="text/javascript">
+    function initialize() {
+		// add map
+		var map = new google.maps.Map(document.getElementById('map_canvas'), {
+			zoom: 6,
+			center: new google.maps.LatLng(-9.12373, -74.94412),
+		});
+		
+		// traverse json alerts
+		$.getJSON( "docs/alerts.json", function(json) {
+	        $.each(json.observatory.alerts, function(index, alert) {
+
+	        	// add marker
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(alert.LatLong.lat, alert.LatLong.lng),
+					map: map,
+					title: alert.address,
+					thread: alert.thread,
+				});
+				google.maps.event.addListener(marker, 'click', function() {
+				    // add Infowindow
+					infowindow = new google.maps.InfoWindow({
+						content: '<div>'+
+					      			'<h3>' + alert.title + '</h3>'+
+					      			'<div>'+
+					      				'<p>' + alert.description + '</p>'+
+					      				'<p>Debate la <a href="http://purificaciondeagua.freeforums.net/thread/' + alert.thread + '/" target="_blank">noticia</a></p>'+
+							      	'</div>'+
+								'</div>',
+					});
+					infowindow.open(map, marker);
+				});
+			
+				// add row in the table
+				$('#tbody').append('<tr class=\'clickable-row-' + index + '\'><td>' + alert.date + '</td><td>' + alert.title + '</td><td style="display:none;">' + alert.LatLong.lat + '</td><td style="display:none;">' + alert.LatLong.lng + '</td></tr>');
+				
+				// on click center the map
+			    $(".clickable-row-" + index).click(function() {
+			        map.setCenter(new google.maps.LatLng(alert.LatLong.lat, alert.LatLong.lng));
+				});
+	        });
+		})
+		.done(function() {
+			console.log( "second success" );
+		})
+		.fail(function( jqxhr, textStatus, error ) {
+			var err = textStatus + ", " + error;
+			console.log( "Request Failed: " + err );
+		})
+		.always(function() {
+			console.log( "complete" );
+		});
+	};
+	</script>
+	<script type="text/javascript" src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYCJKm-NLpt6QWr8nWNtEXfA7WPBhKRpA&v=3.24&callback=initialize" async defer></script>
+
 </body>
 </html>
