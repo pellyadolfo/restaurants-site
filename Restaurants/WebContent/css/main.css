@@ -121,6 +121,9 @@ body > section {
   text-align: center;
   padding-bottom: 0px;
 }
+.right {
+  float: right;
+}
 
 .scaleIn {
   -webkit-animation-name: scaleIn;
@@ -767,6 +770,9 @@ blockquote p {
 	box-shadow: 6px 6px 6px #999;
 }
 
+#requirements-peru-inorganicos {
+	padding-bottom: 0;
+}
 #requirements-peru-inorganicos h1 {
 	color: #000;
 }
@@ -853,7 +859,7 @@ blockquote p {
 
 #feature {
   background: #f2f2f2;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   margin-bottom: 0px;
 }
 
@@ -962,7 +968,7 @@ blockquote p {
 }
 
 #best{
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     background: #f2f2f2;
 }
 
@@ -1080,7 +1086,9 @@ blockquote p {
 	box-shadow: 6px 6px 6px #999;
 }
 
-
+#inorganics {
+	padding-bottom: 0;
+}
 #inorganics td, #inorganics th {
     vertical-align:middle;
 }
