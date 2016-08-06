@@ -1,0 +1,277 @@
+/****************************************************************
+ *
+ * Pricing Tables
+ * Author: Andre Firchow (http://firchow.net)
+ *
+ *
+*****************************************************************/
+.pt-container a {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.pt-container img {
+  max-width: 100%;
+  height: auto;
+}
+.pt-container .pt-shorten-long-text, .pt-container .pt-head,
+.pt-container .pt-image,
+.pt-container .pt-body,
+.pt-container .pt-foot,
+.pt-container .pt-shoutout, .pt-container .pt-body-list > li {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+.pt-container .pt-inner {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.pt-container .pt-inner.pt-featured {
+  z-index: 2;
+}
+.pt-container .pt-inner:hover {
+  z-index: 10;
+}
+.pt-container .pt-head,
+.pt-container .pt-image,
+.pt-container .pt-body,
+.pt-container .pt-foot,
+.pt-container .pt-shoutout {
+  text-align: center;
+}
+.pt-container .pt-description {
+  text-align: center;
+  overflow: hidden;
+}
+.pt-container .pt-head,
+.pt-container .pt-shoutout {
+  font-weight: bold;
+}
+.pt-container .pt-body {
+  border: none !important;
+}
+.pt-container .pt-body-list,
+.pt-container .pt-data-inner {
+  padding: 0;
+  list-style-type: none;
+}
+.pt-container .pt-body-list > li {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 0;
+}
+.pt-container .pt-data-inner {
+  margin: 0;
+}
+.pt-container .pt-data-inner .pt-body-list {
+  font-weight: bold;
+}
+.pt-container .pt-data-inner {
+  -webkit-transition-property: margin;
+  -moz-transition-property: margin;
+  -o-transition-property: margin;
+  transition-property: margin;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.pt-container .pt-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.pt-container .pt-ribbon {
+  width: 80px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+}
+.pt-container .pt-ribbon-title {
+  text-align: center;
+  position: relative;
+  padding: 5px 0;
+  left: -5px;
+  top: 10px;
+  width: 120px;
+  font-size: 11px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.pt-container .pt-ribbon-title:before,
+.pt-container .pt-ribbon-title:after {
+  content: "";
+}
+.pt-container .pt-ribbon-title:before {
+  left: 0;
+}
+.pt-container .pt-ribbon-title:after {
+  right: 0;
+}
+.pt-container .pt-align-left,
+.pt-container .pt-align-left > li {
+  text-align: left !important;
+}
+.pt-container .pt-align-right,
+.pt-container .pt-align-right > li {
+  text-align: right !important;
+}
+.pt-container [class*="pt-col-"] {
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+.pt-container .pt-col-1 {
+  width: 6.25%;
+}
+.pt-container .pt-col-2 {
+  width: 12.5%;
+}
+.pt-container .pt-col-3 {
+  width: 18.75%;
+}
+.pt-container .pt-col-4 {
+  width: 25%;
+}
+.pt-container .pt-col-5 {
+  width: 31.25%;
+}
+.pt-container .pt-col-6 {
+  width: 37.5%;
+}
+.pt-container .pt-col-7 {
+  width: 43.75%;
+}
+.pt-container .pt-col-8 {
+  width: 50%;
+}
+.pt-container .pt-col-9 {
+  width: 56.25%;
+}
+.pt-container .pt-col-10 {
+  width: 62.5%;
+}
+.pt-container .pt-col-11 {
+  width: 68.75%;
+}
+.pt-container .pt-col-12 {
+  width: 75%;
+}
+.pt-container .pt-col-13 {
+  width: 81.25%;
+}
+.pt-container .pt-col-14 {
+  width: 87.5%;
+}
+.pt-container .pt-col-15 {
+  width: 93.75%;
+}
+.pt-container .pt-col-16 {
+  width: 100%;
+}
+.pt-container.pt-grid-12 .pt-col-1 {
+  width: 8.33333%;
+}
+.pt-container.pt-grid-12 .pt-col-2 {
+  width: 16.66667%;
+}
+.pt-container.pt-grid-12 .pt-col-3 {
+  width: 25%;
+}
+.pt-container.pt-grid-12 .pt-col-4 {
+  width: 33.33333%;
+}
+.pt-container.pt-grid-12 .pt-col-5 {
+  width: 41.66667%;
+}
+.pt-container.pt-grid-12 .pt-col-6 {
+  width: 50%;
+}
+.pt-container.pt-grid-12 .pt-col-7 {
+  width: 58.33333%;
+}
+.pt-container.pt-grid-12 .pt-col-8 {
+  width: 66.66667%;
+}
+.pt-container.pt-grid-12 .pt-col-9 {
+  width: 75%;
+}
+.pt-container.pt-grid-12 .pt-col-10 {
+  width: 83.33333%;
+}
+.pt-container.pt-grid-12 .pt-col-11 {
+  width: 91.66667%;
+}
+.pt-container.pt-grid-12 .pt-col-12 {
+  width: 100%;
+}
+
+.pt-clearfix:before,
+.pt-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.pt-clearfix:after {
+  clear: both;
+}
+
+.pt-clearfix {
+  *zoom: 1;
+}
+
+.pt-container:before,
+.pt-container:after {
+  content: " ";
+  display: table;
+}
+
+.pt-container:after {
+  clear: both;
+}
+
+.pt-container {
+  *zoom: 1;
+}
+
+.lt-ie9 .pt-ribbon {
+  display: none;
+}

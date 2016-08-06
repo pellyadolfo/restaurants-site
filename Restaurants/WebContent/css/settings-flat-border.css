@@ -1,0 +1,121 @@
+/****************************************************************
+ *
+ * Pricing Tables
+ * Author: Andre Firchow (http://firchow.net)
+ *
+ *
+*****************************************************************/
+.pt-container {
+  margin-bottom: 100px;
+}
+.pt-container .pt-data-inner {
+  font-size: 15px;
+  line-height: 1;
+}
+.pt-container .pt-inner {
+  margin: -1px;
+  font-size: 15px;
+  line-height: 1;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.pt-container .pt-inner.pt-featured {
+  top: -4px;
+  margin: -5px;
+}
+.pt-container .pt-inner:hover {
+  margin: -18px;
+}
+.pt-container .pt-shoutout {
+  font-size: 32px;
+}
+.pt-container .pt-shoutout small {
+  font-size: 16px;
+}
+.pt-container .pt-shoutout sup {
+  font-size: 12px;
+}
+.pt-container .pt-head,
+.pt-container .pt-image,
+.pt-container .pt-body,
+.pt-container .pt-foot,
+.pt-container .pt-shoutout,
+.pt-container .pt-description {
+  padding: 0 15px;
+  background-image: none !important;
+}
+.pt-container .pt-head {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+}
+.pt-container .pt-shoutout {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.pt-container .pt-image {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pt-container .pt-foot {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pt-container .pt-description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 30px;
+  font-size: 13px;
+}
+.pt-container .pt-body-list {
+  margin: 0 -15px;
+}
+.pt-container .pt-body-list > li {
+  padding: 15px 10px;
+}
+.pt-container .pt-button {
+  font-size: 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-image: none !important;
+  border: none;
+}
+.pt-container .pt-button:hover {
+  background-image: none !important;
+}
+.pt-container .pt-ribbon-title {
+  background-image: none !important;
+}
+@media (max-width: 768px) {
+  .pt-container {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+  }
+  .pt-container .pt-wrapper {
+    width: 768px;
+    padding: 20px 10px;
+  }
+}
