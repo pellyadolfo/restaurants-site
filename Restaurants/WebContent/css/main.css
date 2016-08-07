@@ -873,12 +873,6 @@ blockquote p {
 	font-size: 25px;
 	font-weight: bold;
 }
-
-#pricing {
-	padding-bottom: 40px;
-}
-span.pt-yes { background: url(../images/yes-no.gif) no-repeat center 12px; z-index:1; };
-span.pt-no { background: url(../images/yes-no.gif) no-repeat center -38px !important; };
 	
 .features{
   padding: 0;
@@ -2294,7 +2288,7 @@ ul.social_icons li  a i{
 }
 #steps li {
   margin: 10px 0;
-}'
+}
 
 .pricing_heading {
   margin-top: 120px
@@ -2320,6 +2314,15 @@ ul.social_icons li  a i{
 .pricing-area span  {
   color: #fff;
 }
+
+#pricing li {
+  margin: 10px 0;
+}
+#pricing {
+	padding-bottom: 40px;
+}
+span.pt-yes { background: url(../images/yes-no.gif) no-repeat center 12px; z-index:1; };
+span.pt-no { background: url(../images/yes-no.gif) no-repeat center -38px !important; };
 
 .plan {
   position: relative;
