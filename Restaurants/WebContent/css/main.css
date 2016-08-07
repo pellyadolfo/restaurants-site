@@ -2315,14 +2315,11 @@ ul.social_icons li  a i{
   color: #fff;
 }
 
-#pricing li {
-  margin: 10px 0;
-}
 #pricing {
 	padding-bottom: 40px;
 }
-span.pt-yes { background: url(../images/yes-no.gif) no-repeat center 12px; z-index:1; };
-span.pt-no { background: url(../images/yes-no.gif) no-repeat center -38px !important; };
+span.pt-yes { background: url(../images/yes-no.gif) no-repeat center };
+span.pt-no { background: url(../images/yes-no.gif) no-repeat center };
 
 .plan {
   position: relative;
