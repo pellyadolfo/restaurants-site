@@ -2162,28 +2162,28 @@ ul.social_icons li  a i{
 
 
 /*************************
-********* Portfolio CSS ******
+********* arts CSS ******
 **************************/
-#portfolio {
+#arts {
 	padding-bottom: 0;
 }
-#portfolio_page {
+#arts_page {
   margin-top: 115px;
   padding-bottom: 0;
 }
 
-.portfolio-items, 
-.portfolio-filter {
+.arts-items, 
+.arts-filter {
   list-style: none outside none;
   margin: 0 0 40px 0;
   padding: 0;
 }
 
-.portfolio-filter > li {
+.arts-filter > li {
   display: inline-block;
 }
 
-.portfolio-filter > li a {
+.arts-filter > li a {
   background: none repeat scroll 0 0 #FFFFFF;
   font-size: 14px;
   font-weight: 400;
@@ -2198,8 +2198,8 @@ ul.social_icons li  a i{
   border-radius: 3px;
 }
 
-.portfolio-filter > li a:hover,
-.portfolio-filter > li a.active{
+.arts-filter > li a:hover,
+.arts-filter > li a.active{
   color:#fff;
   background: #ffae00;
   border: 1px solid #ffae00;
@@ -2207,7 +2207,7 @@ ul.social_icons li  a i{
   -webkit-box-shadow: none;
 }
 
-.portfolio-items > li {
+.arts-items > li {
   float: left;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -2215,7 +2215,7 @@ ul.social_icons li  a i{
   box-sizing: border-box;
 }
 
-.portfolio-item {
+.arts-item {
   margin: 0;
   padding:0;
 }
