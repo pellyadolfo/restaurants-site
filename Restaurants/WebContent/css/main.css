@@ -491,10 +491,6 @@ blockquote p {
   margin-top: 140px;
 }
 
-#main-slider .carousel h2 {
-  color: #fff;
-}
-
 #main-slider .carousel .btn-slide, .btn-slide {
   padding: 8px 20px;
   background: #ffae00;
@@ -657,9 +653,15 @@ blockquote p {
 
 .text-orange {
 	color: #ffae00;
+	text-shadow: 2px 2px 2px #000;
 }
 .text-black {
 	color: #000;
+}
+
+.margin-top {
+	margin-top: 30px;
+	display: inline-block;
 }
 
 
