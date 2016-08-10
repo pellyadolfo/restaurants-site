@@ -1131,7 +1131,7 @@ blockquote p {
 }
 
 .recent-work-wrap .recent-work-inner h3{
-  margin: 10px 0;
+  margin: 2px 0;
 }
 
 .recent-work-wrap .recent-work-inner h3 a{
@@ -1154,7 +1154,7 @@ blockquote p {
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;  
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .recent-work-wrap .overlay .preview {
