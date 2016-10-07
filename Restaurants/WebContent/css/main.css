@@ -969,6 +969,19 @@ blockquote p {
 	color: #ffae00;
 }
 
+#bugs {
+	background: #333333;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 3px solid #ffae00;
+}
+#bugs h1 {
+	color: #ffae00;
+}
+#bugs a {
+	color: #ffae00;
+}
+
 #recent-works .col-xs-12.col-sm-4.col-md-3{
   padding: 0;
 }
@@ -1686,6 +1699,11 @@ a.accordion-toggle  i{
 #carousel-slider
 .carousel-control.right {
   background: none;
+}
+
+.carousel-control {
+  padding-top:5%;
+  width:5%;
 }
 
 .skill_text {
