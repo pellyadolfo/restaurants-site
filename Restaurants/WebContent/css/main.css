@@ -995,6 +995,9 @@ blockquote p {
 	font-size : 10px;
     text-align:center; 
 }
+#bug-info h1 {
+	color: #000;	
+}
 
 #recent-works .col-xs-12.col-sm-4.col-md-3{
   padding: 0;
@@ -1002,7 +1005,7 @@ blockquote p {
 
 #recent-works{
 
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: 100% auto;
