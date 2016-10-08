@@ -981,6 +981,20 @@ blockquote p {
 #bugs a {
 	color: #ffae00;
 }
+.bugdata {
+	
+}
+.bugname {
+	color: #ffffff;
+	font-size : 10px;
+	font-style: bold;
+    text-align:center; 
+}
+.bugsize {
+	color: #ffffff;
+	font-size : 10px;
+    text-align:center; 
+}
 
 #recent-works .col-xs-12.col-sm-4.col-md-3{
   padding: 0;
